@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #266ae93f;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 45px 40px;
+  border-radius: 6px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+}
+
+
+.header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 14px;
+  color: #888888;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+#tugas-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#tugas-input:focus {
+  border-color: #b8976b;
+  box-shadow: 0 0 0 2px rgba(184, 151, 107, 0.15);
+}
+
+#btn-tambah {
+  background-color: #111111;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btn-tambah:hover {
+  background-color: #b8976b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(184, 151, 107, 0.2);
+}
+
+.list-container h2 {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#jumlah-tugas {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+
+#daftar-tugas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#daftar-tugas li {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+#daftar-tugas li:hover {
+  padding-left: 8px;
+  border-bottom-color: #b8976b;
+}
+
+#daftar-tugas li .btn-hapus {
+  background: none;
+  border: none;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+#daftar-tugas li .btn-hapus:hover {
+  color: #d9534f;
+}
